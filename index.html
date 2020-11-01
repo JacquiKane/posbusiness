@@ -1,0 +1,1395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHS Business</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style>
+        .boldface {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            font-size: larger;
+        }
+        
+        .card {
+            margin: 10px 10px;
+            height: 375px;
+            align-items: center;
+        }
+        /* Flip Cards CSS */
+        
+        .card-container {
+            display: grid;
+            perspective: 700px;
+            align-items: center;
+        }
+        
+        .card-flip {
+            display: grid;
+            grid-template: 1fr / 1fr;
+            grid-template-areas: "frontAndBack";
+            transform-style: preserve-3d;
+            transition: all 0.7s ease;
+            align-items: center;
+        }
+        
+        .card-flip div {
+            backface-visibility: hidden;
+            transform-style: preserve-3d;
+        }
+        
+        .front {
+            grid-area: frontAndBack;
+        }
+        
+        .back {
+            grid-area: frontAndBack;
+            transform: rotateY(-180deg);
+        }
+        
+        .card-container:hover .card-flip {
+            transform: rotateY(180deg);
+        }
+        
+        .cardimage {
+            width: 90%;
+            height: auto;
+            text-align: center;
+            align-self: center;
+            padding-right: auto;
+            padding-left: auto;
+        }
+        
+        .cardblockformat {
+            padding: 5px;
+            align-items: center;
+        }
+        
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .cardtab {
+            margin: 5px;
+            padding: 5px;
+            border: 2px dashed blue;
+            font-size: medium;
+        }
+        
+        .cardtabdetail {
+            font-size: x-small;
+        }
+        
+        .headerpadding {
+            padding: 5px;
+        }
+        
+        .cardtab {
+            margin: 5px;
+            padding: 5px;
+            border: 2px solid goldenrod;
+            font-size: medium;
+            text-align: left;
+        }
+        
+        td {
+            padding: 5px;
+        }
+        
+        .cardtabdetail {
+            font-size: x-small;
+        }
+        
+        .headerpadding {
+            padding: 5px;
+        }
+        
+        .imgmodalright {
+            float: right;
+            width: 30%;
+            height: auto;
+        }
+        
+        .imgmodal {
+            width: 20%;
+            height: auto;
+        }
+        
+        .imgmodalrightsmaller {
+            float: right;
+            width: 20%;
+            height: auto;
+        }
+        
+        .imgmodalleft {
+            float: left;
+            width: 30%;
+            height: auto;
+        }
+        
+        .jumbotron {
+            background-image: url('carmelgrad2.png');
+            background-size: cover;
+            height: 175px;
+        }
+        
+        .image-container {
+            background-image: url("img_nature.jpg");
+            background-size: cover;
+            position: relative;
+            height: 300px;
+        }
+        
+        .textEffectJumbotron {
+            background-color: white;
+            color: black;
+            font-size: 5vw;
+            font-weight: bold;
+            margin: 0 auto;
+            padding: 10px;
+            width: 90%;
+            text-align: center;
+            position: absolute;
+            top: 25%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            mix-blend-mode: screen;
+            border-radius: 25px;
+        }
+        
+        btn {
+            font-size: small;
+        }
+        
+        .leftie {
+            float: left;
+        }
+        
+        .rightie {
+            float: right;
+        }
+        
+        .globaleconimg {
+            height: 150px;
+            width: fit-content;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="container">
+            <h4>Choose an area, mouse over and click to find out more about our classes in Business and Information Technology.</h4>
+
+            <div class="row">
+
+                <!-- Card 0 -->
+                <div class="col-md-4 card-container center">
+                    <div class="card-flip">
+                        <!-- Card 0 Front -->
+                        <div class="card front">
+                            <div class="card-header">
+                                Exploratory
+                            </div>
+
+                            <span class="fa fa-4x fa-smile-o text-center">What Classes Can I Explore?</span>
+
+                            <div class="card-block cardblockformat">
+
+                                <h6 class="card-subtitle mb-2 text-muted text-center">Careers In Business</h6>
+                                <div class="center">
+                                    <img class="cardimage img-fluid" src="exploratory1.png" class="card-img-top img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Card 0 Front -->
+
+                        <!-- Card 0 Back -->
+                        <div class="card back">
+                            <div class="card-block cardblockformat">
+                                <div class="card-header">
+                                    Exploratory Classes
+                                </div>
+                                <h6 class="card-subtitle mb-2 text-muted headerpadding">Consider these classes</h6>
+                                <div class="card-text">
+                                    <table class="cardtab">
+                                        <tr>
+                                            <th>Course</th>
+                                            <th>Grade</th>
+                                            <th></th>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <a href="#" data-toggle="modal" data-target="#introductiontobusiness">Intro To Business</a>
+                                            </td>
+                                            <td>9-10</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <a href="#" data-toggle="modal" data-target="#introductiontoentrepreneurship">Intro To
+                                                    Entrepreneurship</a>
+                                            </td>
+                                            <td>9-10</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <a href="#" data-toggle="modal" data-target="#businesslawandethics">Business Law & Ethics</a></td>
+                                            <td>11-12</td>
+                                            <td class="cardtabdetail">Dual Credit</td>
+                                        </tr>
+
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Card 0 Back -->
+                    </div>
+                </div>
+                <!-- End Card 0 -->
+
+
+
+                <!-- Card 1 -->
+                <div class="col-md-4 card-container">
+                    <div class="card-flip">
+
+                        <!-- Card 1 Front -->
+                        <div class="card front">
+                            <div class="card-header">
+                                Finance
+                            </div>
+
+                            <span class="fa fa-4x fa-smile-o text-center">Will I Be A Finance Guru?</span>
+                            <div class="card-block cardblockformat">
+                                <h6 class="card-subtitle mb-2 text-muted text-center">Finance Classes</h6>
+
+                                <div class="center">
+                                    <img class="cardimage img-fluid" src="finance.png" class="card-img-top img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Card 1 Front -->
+
+                        <!-- Card 1 Back -->
+                        <div class="card back">
+                            <div class="card-block cardblockformat">
+                                <div class="card-header">
+                                    Finance
+                                </div>
+                                <table class="cardtab">
+                                    <tr>
+                                        <th>Course</th>
+                                        <th>Grade</th>
+                                        <th>Info</th>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="#" data-toggle="modal" data-target="#personalfinancialresponsibility">Personal Financial
+                                                Responsibility</a>
+                                        </td>
+                                        <td>11-12</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="#" data-toggle="modal" data-target="#globaleconomics">
+                                                Global Economics</a>
+                                        </td>
+                                        <td>11-12</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="#" data-toggle="modal" data-target="#introtoaccounting12">
+
+                                            Intro To Accounting: 1,2</a>
+                                        </td>
+                                        <td>10-12</td>
+                                        <td class="cardtabdetail"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="#" data-toggle="modal" data-target="#advancedaccounting12">
+
+                                                Advanced Accounting: 1,2</a>
+                                        </td>
+                                        <td>11-12</td>
+                                        <td class="cardtabdetail">Dual Credit</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <!-- End Card 1 Back -->
+                    </div>
+                </div>
+                <!-- End Card 1 -->
+
+                <!-- Card 2 -->
+                <div class="col-md-4 card-container">
+                    <div class="card-flip">
+                        <!-- Card 2 Front -->
+                        <div class="card front">
+
+                            <div class="card-header">
+                                Management
+                            </div>
+                            <span class="fa fa-4x fa-smile-o text-center">Do I See Myself In Management?</span>
+                            <div class="card-block">
+                                <h6 class="card-subtitle mb-2 text-muted text-center">Management Classes</h6>
+                                <img src="management1.png" class="card-img-top img-fluid cardimage">
+
+                            </div>
+                        </div>
+                        <!-- End Card 2 Front -->
+
+                        <!-- Card 2 Back -->
+                        <div class="card back">
+
+                            <div class="card-block cardblockformat">
+                                <div class="card-header">
+                                    Management
+                                </div>
+                                <table class="cardtab">
+                                    <tr>
+                                        <th>Course</th>
+                                        <th>Grade</th>
+                                        <th></th>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="#" data-toggle="modal" data-target="#ibbusinessmanagement1234">IB Business Management SL:1-2</a>
+                                        </td>
+                                        <td>11-12</td>
+                                        <td class="cardtabdetail">Full Weight</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="#" data-toggle="modal" data-target="#ibbusinessmanagement1234">
+                                                IB Business Management HL:1-4</a>
+                                        </td>
+                                        <td>11-12</td>
+                                        <td class="cardtabdetail">Full Weight, 2 year program</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="#" data-toggle="modal" data-target="#advancedcte">
+
+                                            Advanced CTE: ACP Bus X100</a>
+                                        </td>
+                                        <td>10-12</td>
+                                        <td class="cardtabdetail">1 semester FW</td>
+                                    </tr>
+
+                                </table>
+
+                            </div>
+                        </div>
+                        <!-- End Card 2 Back -->
+                    </div>
+                </div>
+                <!-- End Card 2 -->
+
+
+
+
+                <!-- Card 3 -->
+                <div class="col-md-4 card-container">
+                    <div class="card-flip">
+                        <!-- Card 3 Front -->
+                        <div class="card front">
+                            <div class="card-header">
+                                Marketing
+                            </div>
+
+                            <span class="fa fa-4x fa-smile-o text-center">Marketing Opportunities?</span>
+                            <div class="card-block cardblockformat">
+                                <h6 class="card-subtitle mb-2 text-muted text-center">Classes In Marketing</h6>
+                                <img class="cardimage img-fluid" src="marketing1.png" class="card-img-top img-fluid">
+                            </div>
+                        </div>
+                        <!-- End Card 3 Front -->
+
+                        <!-- Card 3 Back -->
+                        <div class="card back">
+                            <div class="card-block cardblockformat">
+                                <div class="card-header">
+                                    Marketing
+                                </div>
+                                <table class="cardtab">
+                                    <tr>
+                                        <th>Course</th>
+                                        <th>Grade</th>
+                                        <th></th>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="#" data-toggle="modal" data-target="#principlesofmarketing12">Principles of Marketing: 1-2</a>
+                                        </td>
+                                        <td>11-12</td>
+                                        <td class="cardtabdetail"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="#" data-toggle="modal" data-target="#merchandising12">
+                                                Merchandising: 1,2</a>
+                                        </td>
+                                        <td>11-12</td>
+                                        <td class="cardtabdetail"></td>
+                                    </tr>
+
+
+                                </table>
+                            </div>
+                        </div>
+                        <!-- End Card 3 Back -->
+                    </div>
+                </div>
+                <!-- End Card 3 -->
+
+
+
+
+
+                <!-- Card 4 -->
+                <div class="col-md-4 card-container">
+                    <div class="card-flip">
+                        <!-- Card 4 Front -->
+                        <div class="card front">
+                            <div class="card-header">
+                                Information Technology
+                            </div>
+
+                            <span class="fa fa-4x fa-smile-o text-center">Is My Future In Tech?</span>
+                            <div class="card-block cardblockformat">
+                                <h6 class="card-subtitle mb-2 text-muted text-center">Learn About Technology</h6>
+                                <img class="cardimage img-fluid" src="itech1.png" class="card-img-top img-fluid">
+                            </div>
+                        </div>
+                        <!-- End Card 4 Front -->
+
+                        <!-- Card 4 Back -->
+                        <div class="card back">
+                            <div class="card-block cardblockformat">
+                                <div class="card-header">
+                                    Information Technology
+                                </div>
+                                <p class="card-text">
+                                    <table class="cardtab">
+                                        <tr>
+                                            <th>Course</th>
+                                            <th>Grade</th>
+                                            <th></th>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <a href="#" data-toggle="modal" data-target="#dar">DAR</a>
+                                            </td>
+                                            <td>9-12</td>
+                                            <td class="cardtabdetail">S2 Dual Credit</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <a href="#" data-toggle="modal" data-target="#introtocomputerscience">
+                                                    Intro to CS</a>
+                                            </td>
+                                            <td>9-12</td>
+                                            <td class="cardtabdetail">1 Semester</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                <a href="#" data-toggle="modal" data-target="#computerscience12">
+                                                   Computer Science 1,2</a>
+                                            </td>
+                                            <td>9-12</td>
+                                            <td class="cardtabdetail">1 Semester</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <a href="#" data-toggle="modal" data-target="#apcomputerscienceprinciples">
+                                                   AP CS Principles</a><br>
+                                                <a href="#" data-toggle="modal" data-target="#apcomputersciencea">
+                                                    AP CS A</a>
+                                            </td>
+                                            <td>10-12</td>
+                                            <td class="cardtabdetail">Full Weight</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                <a href="#" data-toggle="modal" data-target="#cyber">
+                                                   CS 3: Cybersecurity</a>
+                                            </td>
+                                            <td>10-12</td>
+                                            <td class="cardtabdetail">Full Weight</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <a href="#" data-toggle="modal" data-target="#infotechsupport">
+                                                   Tech Support: 1,2</a>
+                                            </td>
+                                            <td>9-12</td>
+                                            <td class="cardtabdetail">Dual Credit</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                <a href="#" data-toggle="modal" data-target="#web">
+                                                   Web Design</a>
+                                            </td>
+                                            <td>10-12</td>
+                                            <td class="cardtabdetail">1 Semester</td>
+                                        </tr>
+
+                                    </table>
+                                </p>
+                            </div>
+                        </div>
+                        <!-- End Card 4 Back -->
+                    </div>
+                </div>
+                <!-- End Card 4 -->
+
+
+
+                <!-- Card 5 -->
+                <div class="col-md-4 card-container">
+                    <div class="card-flip">
+                        <!-- Card 5 Front -->
+                        <div class="card front">
+                            <div class="card-header">
+                                Careers
+                            </div>
+
+                            <span class="fa fa-4x fa-smile-o text-center">What Do Business Careers Look Like?</span>
+                            <div class="card-block cardblockformat">
+                                <h6 class="card-subtitle mb-2 text-muted text-center">Classes For Business Careers</h6>
+                                <img class="cardimage img-fluid" src="careers1.png" class="card-img-top img-fluid">
+                            </div>
+                        </div>
+                        <!-- End Card 5 Front -->
+
+                        <!-- Card 5 Back -->
+                        <div class="card back">
+                            <div class="card-block cardblockformat">
+                                <div class="card-header">
+                                    Careers
+                                </div>
+                                <p class="card-text">
+                                    <table class="cardtab">
+                                        <tr>
+                                            <th>Course</th>
+                                            <th>Grade</th>
+                                            <th></th>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <a href="#" data-toggle="modal" data-target="#wblcapstone">Work Based Learning: Capstone</a>
+                                            </td>
+                                            <td>12</td>
+                                            <td class="cardtabdetail">2 Blocks</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <a href="#" data-toggle="modal" data-target="#ctsoleadership">
+                                                    CTSO Leadership Development in Action</a>
+                                            </td>
+                                            <td>11-12</td>
+                                            <td class="cardtabdetail">Full weight 2 Blocks: Fall 1 Block: Spring</td>
+                                        </tr>
+
+
+                                    </table>
+                                </p>
+                            </div>
+                        </div>
+                        <!-- End Card 5 Back -->
+                    </div>
+                </div>
+                <!-- End Card 5 -->
+
+
+            </div>
+        </div>
+    </div>
+
+    <!------------------------------------------------------------------------------------------------------------------>
+    <!------------ Modals -------------->
+    <!------------------------------------------------------------- MODALS ------------------------------------------------------------------------->
+    <!-- introduction to business -->
+    <!-- Modal -->
+    <div class="modal fade" id="introductiontobusiness" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Introduction To Business</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img class="imgmodalright" src="introtobusiness1.png">
+                    <ul>
+                        <li>Perfect elective for students with an aptitude for business!
+                            <li>Basic business concepts of management, marketing and entrepreneurship are covered!
+                                <li>Hands on creative projects!
+                                    <li>One semester
+                                        <li>No homework required
+                                            <li>No prerequisite
+                                                <li>Grades 9, 10
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end introduction to business-->
+
+
+    <!-- Introduction to entrepreneurship -->
+    <!-- Modal -->
+    <div class="modal fade" id="introductiontoentrepreneurship" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Introduction To Entrepreneurship</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img class="imgmodalleft" src="entrepreneurship.png ">
+                    <ul>
+
+                        <li>Project based
+                            <li>Unlimited fun and excitement
+                                <li>Any questions see Mr. Holman
+                                    <li>Grades 9, 10
+
+                                        <li>No homework required
+                                            <li>No prerequisite
+                                                <li>Grades 9, 10
+                    </ul>
+                    <ul>
+                        <li>Benefits ALL students
+                            <li>Allows students to uncover unique skills and think outside the box
+                                <li>Creates opportunities
+                                    <li>Instills confidence
+
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end Introduction to entrepreneurship-->
+
+
+    <!-- business law and ethics 1-->
+    <!-- Modal -->
+    <div class="modal fade" id="businesslawandethics" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Business Law & Ethics 1</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img class="imgmodalright" src="businesslaw.jpg">
+                    <ul>
+                        <li>Learn the basics of law
+                            <li>Create an understanding of how the law affects businesses and everyday life
+                                <li>Focus on “why” and “how”
+                                    <li>Focus on practical, not theoretical
+                                        <li>College Dual Credit through Ivy Tech
+                                            <li>Mock trials during class
+                                                <li>Prerequisites: Desire to learn and better yourself, HAVE FUN
+                                                    <li>See Mr. Browning (F102) with any questions
+                                                        <li>Grades 11, 12
+
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end  business law and ethics 1-->
+
+    <!-- personalfinancialresponsibility-->
+    <div class="modal fade" id="personalfinancialresponsibility" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Personal Financial Responsibility</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h3>Great Course For All Students</h3>
+                    <div class="leftie">
+                        <h6>Areas of Study</h6>
+                        <ul>
+
+                            <li> Goals
+                                <li>Taxes
+                                    <li>Banking
+                                        <li>Paying for College
+                                            <li>Credit
+                                                <li>Investing
+                                                    <li>Insurance
+                                                        <li>Budgeting
+                                                        </li>
+                        </ul>
+                    </div>
+                    <div class="rightie">
+                        <h6>Class Requirements</h6>
+                        <ul>
+                            <li>One semester</li>
+                            <li>Project-based assessments
+                                <li>Grades 11, 12
+
+                        </ul>
+
+
+                    </div>
+                    <div class="rightie">
+                        <img class="imgmodalright" src="personalfinance.jpg">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- personalfinancialresponsibility-->
+
+
+    <!-- Global Economics -->
+    <!-- Modal -->
+    <div class="modal fade" id="globaleconomics" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Business Law & Ethics 1</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        <li>General Economics curriculum includes basic micro and macro economics
+                            <li>Fulfills economics requirement
+                                <li>Homework is primarily studying for tests
+                                    <li>Grades 11, 12
+
+                    </ul>
+                </div>
+                <img class="globaleconimg" src="globaleconomics.png">
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END Global Economics-->
+
+
+    <!-- Intro to accounting 1,2 -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="introtoaccounting12" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Intro To Accounting 1,2</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img class="imgmodalright" src="accountingfy1.jpg">
+                    <ul>
+                        <li>College DUAL CREDIT (3 Credit Hours) Vincennes University)
+                            <li>2-semester course
+                                <li>No prerequisites
+                                    <li>A MUST for ALL College Business Majors: Excellent foundation for college accounting
+                                        <li>Computerized, hands-on approach
+                                            <li>Prerequisite for Advanced Accounting
+                                                <li>Grades 10, 11, 12
+
+                    </ul>
+                </div>
+                <img class="imgmodalright" src="accountingfy2.jpg">
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END Intro to accounting 1,2 -->
+
+
+    <!-- Advanced accounting 12-->
+
+    <!-- Modal -->
+    <div class="modal fade" id="advancedaccounting12" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Advanced Accounting 1,2</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        <li>Highly recommended for students who are planning to major in business management, marketing, entrepreneurship, finance or any other business major
+                            <li>Over 60% of Carmel High School students pursue a major in business
+                                <li>YOU NEED ACCOUNTING TO BE SUCCESSFUL IN COLLEGE ACCOUNTING
+                                    <li>Starting salaries for accountants grow every year and the job outlook is limitless
+                                        <li>Accounting 1 prerequisite
+                                            <li>Grades 11, 12
+
+                    </ul>
+                </div>
+                <img class="imgmodalright" src="advancedaccounting.jpg">
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- END Advanced accounting 12-->
+
+
+    <!-- IB Business management sl -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="ibbusinessmanagement1234" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">IB Business Management 1-2 & 3-4</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        <li>Fully Weighted Course that can be used for the SENIOR SCHEDULE
+                            <li>Can be taken for ONE or TWO years 🡪 Exam taken @ end of year 2
+                                <li>Passing Exam Score = Up to 8 college credits at schools like IU
+                                    <li>Perfect class for students who want to study business in college
+                                        <li>IB 1-2: Grades 11, 12
+                                            <li>IB 3-4: Grade 12
+
+
+                    </ul>
+                    <h3>CONTENT</h3>
+                    <p>Marketing, Finance, Human Resources, Operations</p>
+
+                    <h3>LEARNING STYLE</h3>
+                    <p>Project-Based, Authentic Experiences, Class Discussions</p>
+                    <img class="imgmodalright" src="ibbusinessmanagement.JPG">
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- END ib business management sl-->
+
+
+
+    <!-- Principles of marketing 12 -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="principlesofmarketing12" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Principles of Marketing: 1,2</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        <li>Did you know...marketing is part of your life every day?
+                            <li>Do you like to be creative and collaborative?
+                                <li>Do you like to express your ideas using hands on projects?
+                                    <li>Do you think it would be fun to invent a product?
+                                        <li>Do you want to be part of the world class Carmel DECA chapter?
+                                            <li>Then Principles of Marketing 1 & 2 is the class for you.
+                                                <ul>
+                                                    <li>No homework
+                                                        <li>No prerequisite
+                                                            <li>DECA REQUIRED
+                                                                <li>Grades 10, 11, 12
+                                                </ul>
+                    </ul>
+                    <img class="imgmodalright" src="principlesofmkt1.png">
+                    <img class="imgmodalright" src="principlesofmkt2.png">
+                    <img class="imgmodalright" src="principlesofmkt3.png">
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- END principles of marketing 12-->
+
+
+
+
+
+    <!-- merchandising 12 -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="merchandising12" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Merchandising: 1,2</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        <li>Did you know...fashion occurs in a global marketplace?
+                            <li>Do you like to be creative and collaborative?
+                                <li>Do you like to express your ideas using hands on projects?
+                                    <li>Do you think it would be fun to create your own “dream store” boutique?
+                                        <li>Would you like to create your own fashion designs?
+                                            <li>Do you want to be part of the world class Carmel DECA chapter?
+                                                <li>Then Merchandising is a class for you!
+                                                    <li>No homework
+                                                        <li>No prerequisite
+                                                            <li>Grades 10, 11, 12
+                    </ul>
+
+                    <img class="imgmodalright" src="merch1.gif">
+                    <img class="imgmodalright" src="merch2.jpg">
+                    <img class="imgmodalright" src="merch3.jpg">
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- END merchandising 12-->
+
+
+
+
+
+    <!-- DAR -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="dar" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Digital Applications & Responsibility</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        <li>Focus on Microsoft Office - Word, Excel, PowerPoint, Access
+                            <li>Project based, hands-on, individualized training
+                                <li>Microsoft Office Specialist (MOS) Certification
+                                    <li>Dual-Credit through Ivy Tech
+                                        <li>3 credit hours if Ivy Tech requirements are met
+                                            <li>No Prerequisite (DAR1 is prerequisite for DAR2)
+                                                <li>Grades 9, 10, 11, 12
+                    </ul>
+
+                    <img class="imgmodalright" src="dar.png">
+
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- END DAR-->
+
+
+
+    <!-- Intro to computer science -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="introtocomputerscience" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Intro To Computer Science</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        Explores the world of Computer Science Focus:
+                        <li>Web page development
+                            <li>Programming
+                                <li>Gaming/mobile development
+                                    <li>Artificial intelligence/robotics
+                                        <li>Hands on!
+                                            <li>Grades 9, 10, 11, 12
+                    </ul>
+
+                    <img class="imgmodalright" src="code.png">
+
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- END intro to computer science -->
+
+
+
+
+    <!-- ap computer science principles-->
+
+    <!-- Modal -->
+    <div class="modal fade" id="apcomputerscienceprinciples" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">AP Computer Science Principles</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        <li>Suited to students who want to explore different areas of Computer Science
+                            <ul>
+                                <li>Internet
+                                    <li>Coding
+                                        <li>Computers In Society
+                            </ul>
+                            <li>College Board approved, accessible course, created to promote understanding of Computer Science
+                                <li>Collaborative, hands-on
+                                    <li>Prerequisite - Algebra 1
+                                        <li>Full Weight Course
+                                            <li>Grades 10, 11, 12
+                    </ul>
+                    </ul>
+                    <img class="imgmodalright" src="apcsp.jpg">
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- END ap computer science principles -->
+
+
+    <!-- ap computer science a-->
+
+    <!-- Modal -->
+    <div class="modal fade" id="apcomputersciencea" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">AP Computer Science A</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        <li>Emphasizes the object-oriented programming methodology
+                            <ul>
+                                <li>problem solving
+                                    <li>algorithm development
+                                        <li>coding in the Java language
+                            </ul>
+                            <li>Equivalent of a first-semester college course in computer science
+                                <li>Rigorously paced course
+                                    <li>Prerequisite - Algebra 2
+                                        <li>Full Weight Course
+                                            <li>Grades 10, 11, 12
+                    </ul>
+                    <img class="imgmodalright" src="ap.jpg">
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- END ap computer science a -->
+
+
+    <!-- cyber-->
+
+    <!-- Modal -->
+    <div class="modal fade" id="cyber" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Computer Science 3 : PLTW Cybersecurity</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        <li>Career exploration in Cybersecurity / Information Security
+                            <li>Personal, System and Network Security
+                                <li>Applied Cyber Security
+                                    <li>Hands-on Projects inside Virtual Machines
+                                        <li>Project Lead The Way Course
+                                            <li>Prerequisite - AP Computer Science Principles or AP Computer Science A
+                                                <li>Full Weight Course
+                                                    <li>Grades 10, 11, 12
+                    </ul>
+                    <img class="imgmodalright" src="pltw.png">
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- END cyber -->
+
+
+    <!-- tech support-->
+
+    <!-- Modal -->
+    <div class="modal fade" id="infotechsupport" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Computer Science 3 : PLTW Cybersecurity</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        Explores Computer Hardware, Networking and Troubleshooting
+                        <li>CISCO Web-Based Curriculum
+                            <li>Computer Assembly
+                                <li>Hardware Requirements
+                                    <li>Operating Systems
+                                        <li>Windows
+                                            <li>Security
+                                                <li>Communication
+                                                    <li>Hands-on Computer Assembly and Troubleshooting
+                                                        <li>Dual-Credit through Ivy Tech - 3 credit hours Ivy Tech
+                                                            <li>Full Year Course
+                                                                <li>Grades 10, 11, 12
+                    </ul>
+                    <img class="imgmodalright" src="infotechsupport.jpg">
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- END tech support -->
+
+
+
+
+
+    <!-- web-->
+
+    <!-- Modal -->
+    <div class="modal fade" id="web" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Web Design</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        <li>Web Page Design and Development Class
+                            <li>HTML5/CSS3
+                                <li>Javascript
+                                    <li>Develop and design professional web pages
+                                        <li>One semester course
+                                            <li>Grades 10, 11, 12
+                    </ul>
+                    <img class="imgmodalright" src="web1.jpg">
+                    <img class="imgmodalright" src="web2.jpg">
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- END web -->
+
+
+
+
+
+
+    <!-- wbl capstone-->
+
+    <!-- Modal -->
+    <div class="modal fade" id="wblcapstone" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">WBL Business Cooperative Experiences</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        <li>Work-based learning experience, career, and leadership development
+                            <li>Release time during B4, G4, or both
+                                <li>Organize Holiday Secret Shop fundraiser
+                                    <li>Builds upon the foundations of marketing and applies the functions of marketing at the advanced level.
+                                        <li>Would you like to study relationships between consumer behavior and marketing activities?
+                                            <li>Do you like to be creative and collaborative?
+                                                <li>Do you like to express your ideas using hands on projects?
+                                                    <li>Do you want to be part of the world class Carmel DECA chapter?
+                                                        <li>No homework is required.
+                                                            <li>Prerequisites
+                                                                <ul>
+                                                                    <li>Preparing for College and Careers
+                                                                        <li>4 credits of introductory and advanced business courses </ul>
+
+                                                                <li>Grade 12 Only
+                    </ul>
+                    <img class="imgmodalright" src="wbl1.jpg">
+                    <img class="imgmodalright" src="wbl2.png">
+                    <img class="imgmodalright" src="wbl3.png">
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- END wbl -->
+
+
+
+
+    <!-- ctso leadership development in action-->
+
+    <!-- Modal -->
+    <div class="modal fade" id="ctsoleadership" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">CTSO Leadership Development in Action</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        <li>Independent Study course for:
+                            <li>DECA Executive Leadership Team Members
+                                <li>President, CMO, COO, CFO, Director of HR, Chief Competition Officers (Work with Mr. Holman)
+                                    <li>Carmel Café & Market Managers & Employees
+                                        <li>Responsible for the strategic planning & daily operations of the Café & Market (Work with Mrs. Noel)
+                                            <li>Grades 11, 12
+                                                <p>DECA You must be an active member of DECA to participate in this independent study
+                                                </p>
+                                                <p>LEARNING STYLE You must be a self-directed & independent learner.
+                                                </p>
+                                                <p>REQUIRED You must apply for this course. Pre-approval by Mr. Holman / Mrs. Noel
+                                                </p>
+                    </ul>
+
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- END ctso leadership dev in action -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
